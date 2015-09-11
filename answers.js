@@ -48,3 +48,18 @@ function stringTellsWhatToDo (num1, num2, str) {
         return 0;
     }
 }
+
+// Defining a function that takes a string and a number, and returns the string repeated that many number of times
+
+
+var stringRepeated = function(theString, num) {
+
+        var count = 0;
+        var result = "";
+    
+    while (count < num){
+        result = result + theString;
+        count ++;
+    }
+return result;
+}
