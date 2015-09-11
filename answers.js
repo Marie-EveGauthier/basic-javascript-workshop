@@ -20,3 +20,9 @@ function GiveACharacter (str, num) {
 function addition (num1, num2) {
     return num1 + num2;
 }
+
+//Defining a function that takes two numbers and multiplies them together
+// If I pass something other than a number to the function, that tells me that the argument is not defined
+function multiplication (num1, num2) {
+    return num1 * num2;
+}
