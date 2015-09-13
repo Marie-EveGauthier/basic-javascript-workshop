@@ -49,6 +49,29 @@ function stringTellsWhatToDo (num1, num2, str) {
     }
 }
 
+//or
+
+function stringTellsWhatToDoImproved (num1, num2, str) {
+    switch(str) {
+        case "add":
+            console.log(num1 - num2);
+            break;
+        case "subtract":
+            console.log(num1 - num2);
+            break;
+        case "mult":
+            console.log(num1 * num2);
+            break;
+        case "div":
+            console.log(num1 / num2);
+            break;
+        default:    
+            console.log(0);
+            
+    }
+}
+
+
 // Defining a function that takes a string and a number, and returns the string repeated that many number of times
 
 
