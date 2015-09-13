@@ -85,4 +85,19 @@ var stringRepeated = function(theString, num) {
         count ++;
     }
 return result;
+};
+
+
+var stringRepeatedImproved = function(str, num) {
+   
+    var result = "";
+   
+    while (num >0) {
+        result = result + str;
+       num --;
+    }
+    return result;
 }
+
+
+ 
