@@ -134,3 +134,24 @@ function longestWord(aPhrase) {
     }
     return word;
 }
+
+//Defining a function that takes a phrase, and returns the same phrase with every word capitalized
+function everyWordCapitalized(aPhrase) {
+    var becomeAnArray = aPhrase.split(" ");
+    
+    for (var i=0; i<becomeAnArray.length; i++){
+        var firstChar = becomeAnArray[i].charAt(0);
+        var rest = becomeAnArray[i].substring(1);
+        
+        
+        
+        firstChar = firstChar.toUpperCase();
+        rest = rest.toLowerCase();
+        becomeAnArray[i] = firstChar + rest;
+       
+   }
+    
+    return becomeAnArray.join(" ");
+}
+
+
