@@ -54,17 +54,13 @@ function stringTellsWhatToDo (num1, num2, str) {
 function stringTellsWhatToDoImproved (num1, num2, str) {
     switch(str) {
         case "add":
-            console.log(num1 - num2);
-            break;
+            return(num1 - num2);
         case "subtract":
-            console.log(num1 - num2);
-            break;
+            return(num1 - num2);
         case "mult":
-            console.log(num1 * num2);
-            break;
+            return(num1 * num2);
         case "div":
-            console.log(num1 / num2);
-            break;
+            return(num1 / num2);
         default:    
             console.log(0);
             
