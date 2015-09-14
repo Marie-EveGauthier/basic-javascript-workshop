@@ -154,4 +154,24 @@ function everyWordCapitalized(aPhrase) {
     return becomeAnArray.join(" ");
 }
 
+//Defining a function that takes an array and returns the largest number of the array
+function largestOfArray(myArray) {
+        
+    return Math.max.apply(Math, myArray);
+}
+
+//or
+
+function maxOfArray(myArray) {
+    var largest = 0;
+    
+        for (var i = 0; i < myArray.length; i++){
+            if (largest < myArray[i]) {
+                largest = myArray[i];
+                
+            }
+        }
+    return largest;
+    
+}
 
