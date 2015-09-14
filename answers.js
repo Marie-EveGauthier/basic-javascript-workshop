@@ -106,3 +106,16 @@ function reverse(s) {
   return o;
 }
  
+//Defining a function that takes a number and returns the factorial of a number
+//It doesn't work if it's a decimal number or a negative number
+function factorial (n){
+  if (n === 0 || n === 1) {
+    return 1;
+  } else {
+  var j = 1;
+  for(i=1; i<=n; i++){
+    j = j*i;
+  }
+  return j;
+    }
+}
