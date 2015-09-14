@@ -175,3 +175,17 @@ function maxOfArray(myArray) {
     
 }
 
+//Defining a function that takes an array, and returns a filtered array that should only contain the truthy values from the initial array
+//It doesn't work with string in the array and I don't know why...
+
+
+function TruthyValue(myArray){
+    var mynums = [];
+    for (var i=0; i<myArray.length; i++){
+        if ((myArray[i] > 0) && (myArray[i] !== null)){
+           mynums.push(myArray[i]); 
+        }
+    }
+    return mynums;
+}
+
