@@ -216,3 +216,14 @@ function uniqueArray(arr1, arr2){
     }
     return result;
 }
+
+//Defining a function that returns a new array that maps every element of the input array by passing it through the function received
+function fnMapsArr(myArray, myFunction){
+    var newArray =[];
+    for(var i = 0; i<myArray.length; i++){
+        var newInput = myFunction(myArray[i]);
+        newArray.push(newInput);
+    }
+    return newArray;
+        
+}
