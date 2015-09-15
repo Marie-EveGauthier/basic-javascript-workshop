@@ -189,3 +189,30 @@ function TruthyValue(myArray){
     return mynums;
 }
 
+
+// Defining a function that returns the sum of all the numbers in the array
+function sum(myArray) {
+    var mytotal = 0;
+    for(var i = 0; i<myArray.length; i++){
+        mytotal += myArray[i];
+    }
+    
+   return mytotal;
+}
+
+//Defining a a function that takes two arrays, and returns an array of all elements that are only in one array
+function uniqueArray(arr1, arr2){
+    var result =[];
+    
+    for(var i = 0; i<arr1.length; i++){
+        if(arr2.indexOf(arr1[i]) === -1){ 
+            result.push(arr1[i]);
+        }
+   }
+    for(var i = 0; i<arr2.length; i++){
+        if(arr1.indexOf(arr2[i]) === -1){
+           result.push(arr2[i]);
+        }
+    }
+    return result;
+}
